@@ -1,11 +1,17 @@
-body {
-  justify-content: center;
-  align-items: center;
-}
-
 h1 {
   color: rgb(48, 39, 24, 81%);
   margin: 20px;
+}
+
+#produkter {
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+#produkter img {
+  width: 100%;
+  justify-self: center;
+  margin-bottom: 2vh;
 }
 
 .img {
@@ -20,42 +26,46 @@ h1 {
   background-color: transparent;
 }
 
+#typer {
+  text-align: center;
+}
+
 #typer p {
   color: rgb(158, 38, 38);
   text-align: center;
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
-.tag1,
-.tag2,
-.tag3,
-.tag4 {
-  text-align: center; /* Centrer indhold */
-  position: relative; /* Gør positionering relativ, så vi kan positionere teksten og billedet inden i containeren */
-  width: 80px; /* Juster bredden efter behov */
-  height: 80px; /* Juster højden efter behov */
-  border: 5px solid; /* Grøn firkant omkring containeren */
-  border-radius: 100%; /* Gør kantene runde for at danne en cirkel */
-  margin: 0 auto; /* Centrer containeren horisontalt */
-  display: flex;
+.tag-container {
+  margin: 200px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
   justify-content: center;
-  align-items: center;
-  color: rgb(0, 171, 65);
-  z-index: 2;
 }
 
 .tag1 img,
 .tag2 img,
 .tag3 img,
 .tag4 img {
-  position: absolute; /* Absolut positioneret */
-  top: 4px; /* Afstand fra toppen af containeren */
+  width: 80px;
+  height: 80px;
+  border: 5px solid;
+  border-radius: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 171, 65);
 }
 
 .tag1 p,
 .tag2 p,
 .tag3 p,
 .tag4 p {
-  position: absolute; /* Absolut positioneret */
-  top: 20px; /* Afstand fra bunden af containeren */
+  position: relative;
+  top: -20px;
+  left: -1px;
 }
