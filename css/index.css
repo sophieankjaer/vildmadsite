@@ -27,42 +27,27 @@ section .forside {
   text-transform: uppercase;
 }
 
-.rammerne1 {
-  background-image: url("/image/ramme1.svg");
-  position: absolute;
-  z-index: 101;
-  width: 100%;
-  padding: 110px;
-  object-fit: cover;
-}
-
-.rammerne2 {
-  background-image: url("/image/ramme1.svg");
-  position: absolute;
-  z-index: 101;
-  width: 100%;
-  padding: 110px;
-}
-
-.ramme_billede1 .ramme_billede2 {
-  position: relative;
-}
-
-.openland h2,
-.forrest h2 {
-  position: relative;
-  top: -100px;
-  color: var(--beige);
-}
-.openland img,
-.forrest img {
-  width: 100%;
-  aspect-ratio: 16/9;
-  object-fit: cover;
-}
-
 .openland {
   margin-bottom: 20px;
+}
+
+.openland_grid,
+.forrest_grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.billede1,
+.ramme1,
+.titel1 h2 {
+  grid-column: 1/1;
+  grid-row: 1/1;
+}
+.billede2,
+.ramme2,
+.titel2 h2 {
+  grid-column: 1/1;
+  grid-row: 1/1;
 }
 
 .link-button {
@@ -88,9 +73,14 @@ footer {
 }
 /* minumum 800px */
 @media (min-width: 800px) {
-  .overskrift {
-    top: 230px;
-    margin: 0 0 0 410px;
+  .forside {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .forside_billede .overskrift1 h1 {
+    grid-column: 1/1;
+    grid-row: 1/1;
   }
 
   /* kategorier */
@@ -102,6 +92,7 @@ footer {
     text-transform: uppercase;
     gap: 20px;
   }
+
   .openland {
     margin-bottom: 0px;
   }
