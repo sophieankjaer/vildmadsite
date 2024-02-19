@@ -1,0 +1,9 @@
+article {
+  text-align: center;
+}
+article h1 {
+  text-transform: uppercase;
+}
+.elementerne {
+  display: block;
+}
