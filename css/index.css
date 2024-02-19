@@ -1,0 +1,74 @@
+/* ___________________________ Ester INDEX ___________________________ */
+.forside {
+  background-image: url("/Grafik/baggrund_skov.svg");
+  margin-bottom: 20px;
+}
+.forside h1 {
+  text-align: center;
+  color: var(--beige);
+  border: solid 4px var(--beige);
+  padding: 20px;
+  margin-inline: 170px;
+  text-transform: uppercase;
+}
+.overskrift {
+  padding: 100px;
+  padding-inline: initial;
+  align-items: center;
+  text-align: center;
+  margin-inline: auto;
+}
+
+/* kategorier */
+.kategorier {
+  display: block;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  gap: 20px;
+}
+
+.openland {
+  background-image: url("/Grafik/vandnært.svg");
+  color: var(--beige);
+  padding: 100px;
+}
+.forrest {
+  background-image: url("/Grafik/skov.svg");
+  color: var(--beige);
+  padding: 100px;
+}
+
+.link-button {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 3px 15px;
+  color: var(--brun);
+  border: 2px solid var(--brun);
+
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.link-button:hover {
+  border: 2px solid var(--beige);
+  background-color: var(--grøn);
+  color: var(--beige);
+}
+
+footer {
+  margin-top: 100px;
+}
+/* minumum 800px */
+@media (min-width: 800px) {
+  /* kategorier */
+  .kategorier {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    gap: 20px;
+  }
+}
