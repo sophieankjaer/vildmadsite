@@ -8,15 +8,14 @@ section .forside {
   aspect-ratio: 22/9;
   object-fit: cover;
 }
-.overskrift {
+.overskrift1 {
   position: absolute;
   z-index: 101;
   text-align: center;
   color: var(--beige);
   border: solid 4px var(--beige);
   text-transform: uppercase;
-  top: 150px;
-  margin: 0 0 0 110px;
+  margin: -110px 0 0 140px;
 }
 
 /* kategorier */
@@ -81,6 +80,9 @@ footer {
   .forside_billede .overskrift1 h1 {
     grid-column: 1/1;
     grid-row: 1/1;
+  }
+  .overskrift1 {
+    margin: 270px 0 0 620px;
   }
 
   /* kategorier */
