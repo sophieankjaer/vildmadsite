@@ -1,0 +1,71 @@
+h1 {
+  color: rgb(48, 39, 24, 81%);
+  margin: 20px;
+}
+
+#produkter {
+  text-align: center;
+  margin-bottom: 10vh;
+}
+
+#produkter img {
+  width: 100%;
+  justify-self: center;
+  margin-bottom: 2vh;
+}
+
+.img {
+  width: 50%;
+}
+
+.knap {
+  color: rgb(0, 171, 65);
+  border: 2px solid;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: transparent;
+}
+
+#typer {
+  text-align: center;
+}
+
+#typer p {
+  color: rgb(158, 38, 38);
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.tag-container {
+  margin: 200px;
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  justify-content: center;
+}
+
+.tag1 img,
+.tag2 img,
+.tag3 img,
+.tag4 img {
+  width: 80px;
+  height: 80px;
+  border: 5px solid;
+  border-radius: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: rgb(0, 171, 65);
+}
+
+.tag1 p,
+.tag2 p,
+.tag3 p,
+.tag4 p {
+  position: relative;
+  top: -20px;
+  left: -1px;
+}
