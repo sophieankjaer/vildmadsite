@@ -3,7 +3,42 @@ article {
 }
 article h1 {
   text-transform: uppercase;
+  font-size: 2rem;
 }
 .elementerne {
   display: block;
+}
+
+.elements {
+  margin: 0 auto;
+  padding: 23px;
+  margin-inline: 140px;
+  color: var(--rødbrun);
+}
+.elements_ramme {
+  border: solid 2px var(--rødbrun);
+  padding: 40px;
+  padding-inline: initial;
+  align-items: center;
+  text-align: center;
+  margin-inline: auto;
+}
+
+.elements_ramme a {
+  font-family: "lato", sans-serif;
+  font-size: 1.2rem;
+  color: var(--rødbrun);
+  text-decoration: none;
+  display: inline-block;
+  margin-inline: 20px 0;
+  padding: 20px 20px;
+  border-radius: 5px;
+}
+
+.elements_names {
+  display: grid;
+}
+.elements_ramme a:hover {
+  transition: 0.2s;
+  text-decoration: underline;
 }
